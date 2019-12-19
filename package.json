@@ -1,0 +1,24 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "My Portfolio",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel src/index.html",
+    "pord": "parcel build src/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/M-Hafez22/test.git"
+  },
+  "author": "Mohamed_Hafez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/M-Hafez22/test/issues"
+  },
+  "homepage": "https://github.com/M-Hafez22/test#readme",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4",
+    "sass": "^1.23.7"
+  }
+}
