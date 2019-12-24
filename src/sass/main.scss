@@ -1,1 +1,9 @@
 @import 'config';
+@import 'header';
+@import 'home';
+
+
+body{
+  background: $bg-dark;
+  color: $clr-light;
+}

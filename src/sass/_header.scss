@@ -6,7 +6,7 @@
     height: 20px;
     width: 35px;
     cursor: pointer;
-    @include transition-ease;
+    @include transition-ease(0.5s);
     
 
     &__burger {
@@ -17,7 +17,7 @@
       background: $clr-light;
       width: 30px;
       height: 4px;
-      @include transition-ease;
+      @include transition-ease(0.5s);
        
       &:hover::before,
       &:hover::after,
@@ -63,7 +63,7 @@
   top: 0;
   left: 0;
   width: 100vw;
-  opacity: 0.98;
+  opacity: 0.90;
   visibility: hidden;
 
   &.open {
@@ -81,7 +81,7 @@
     list-style-type: none;
     padding-right: 1rem;
     transform: translateY(-100%);
-    @include transition-ease;
+    @include transition-ease(0.5s);
 
     &.open {
       transform: translateY(0);
@@ -89,7 +89,7 @@
 
     &__item {
       transform: translateX(100vw);
-      @include transition-ease;
+      @include transition-ease(0.5s);
 
       &.open {
        transform: translateX(0); 
@@ -106,7 +106,7 @@
       text-transform: uppercase;
       padding: 2rem 0;
       font-weight: 300;
-      @include transition-ease;
+      @include transition-ease(0.5s);
 
       &:hover {
         color: $clr;
