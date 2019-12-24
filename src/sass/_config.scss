@@ -1,6 +1,22 @@
+$clr-dark: #1a1a1a;
+$clr-light: #d4d4d4;
+$clr-speacial: #E31B6D;
+$bg-dark: #1B242F;
+
 *, ::after, ::before {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  align-content: center
+  align-content: center;
 }
+
+a{
+  text-decoration: none;
+  color: $clr-light;
+}
+
+
+@mixin transition-ease($sec) {
+  transition: all $sec ease-in-out;
+}
+
