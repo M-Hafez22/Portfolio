@@ -12,11 +12,17 @@ $bg-dark: #1B242F;
 
 body{
   color: $clr-light;
+  background : $bg-dark;
 }
  
 a{
   text-decoration: none;
   color: $clr-light;
+}
+
+img {
+  max-width: 100%;
+  height: 100%;
 }
 
 
@@ -31,4 +37,5 @@ a{
   justify-content: center;
   align-items : center;
 }
+
 

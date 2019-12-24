@@ -1,0 +1,31 @@
+
+
+#portfolio{
+  width: 95%;
+  margin: auto;
+
+  .gallery{
+    @include flexCenter;
+
+    .project{
+      margin: 2em auto;
+      position: relative;
+      background-color: $bg-dark;
+
+      &__info{
+        position: absolute;
+        z-index: 2;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        padding-bottom: 2em;
+        color: #fff;
+        background-color: rgba(0,0,0,.6);
+
+        &__name{
+          margin: 1em 0 1.5em;
+        }
+      }
+    }
+  }
+}
