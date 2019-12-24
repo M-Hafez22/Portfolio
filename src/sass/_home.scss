@@ -1,0 +1,48 @@
+
+.home{
+  @include flexCenter;
+  
+  height: 100vh;
+  font-size: 1.5em;
+  background : $bg-dark;
+
+  &__name{
+    font-size: 2em;
+    margin-bottom: 2rem;
+    & > span{
+      color: $clr-speacial;
+    }
+
+  }
+
+  &__link{
+    margin-top: 4em;
+    margin-right: 3em;
+    &__btn{
+      margin-left : 3em;
+      // position: relative;
+      // &::before{
+      //   content: '';
+      //   height:3px;
+      //   width:8px;
+      //   background:  $clr-speacial;
+      //   // background: $bg-dark;
+      //   // position: absolute;
+      //   bottom: 5px;
+      // }
+      // &:hover::before{
+      //   @include transition-ease(1s);
+      //   // width: 7rem;
+      //   overflow: hidden; 
+      //   background: $clr-speacial;
+      //   transform: translateX(1300%);
+      // }
+      &:hover{
+        @include transition-ease(1s);
+        color: $clr-speacial;
+        // border : solid 2px $clr-speacial;
+      }
+    }
+  }
+}
+

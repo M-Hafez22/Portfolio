@@ -10,6 +10,10 @@ $bg-dark: #1B242F;
   align-content: center;
 }
 
+body{
+  color: $clr-light;
+}
+ 
 a{
   text-decoration: none;
   color: $clr-light;
@@ -18,5 +22,13 @@ a{
 
 @mixin transition-ease($sec) {
   transition: all $sec ease-in-out;
+}
+
+
+@mixin  flexCenter{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items : center;
 }
 
