@@ -22,7 +22,11 @@
         font-size: 1.5em;
         background-color: $bg-dark;
         opacity: 0.70;
-
+  
+        &:hover{
+          opacity: 0.95;
+        }
+        
         &__name{
           margin: 1em 0 1.5em;
         }
@@ -38,6 +42,19 @@
             border-color: $clr-speacial;
           }
         }
+      }
+    }
+  }
+
+  .portfolio__footer{
+    font-size: 4em;
+    margin:auto;
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    & > a > i{
+      &:hover{
+        color:$clr-speacial;
       }
     }
   }
