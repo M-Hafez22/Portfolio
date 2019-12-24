@@ -32,11 +32,26 @@ img {
 }
 
 
-@mixin  flexCenter{
+@mixin columnCenter{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items : center;
 }
 
+@mixin move-top{
+  animation-name: move-top;
+  animation-duration: 500ms;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite; 
+  animation-timing-function: linear;
+}
 
+
+@keyframes move-top {
+  0% { -webkit-transform:translateY(0px); }
+  25% { -webkit-transform:translateY(-5px); }
+  50% { -webkit-transform: translateY(-10px); }
+  75% { -webkit-transform: translateY(-5px); }
+  100% { -webkit-transform: translateY(0px); }
+} 

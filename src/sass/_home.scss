@@ -1,6 +1,6 @@
 
 .home{
-  @include flexCenter;
+  @include columnCenter;
   
   height: 100vh;
   font-size: 1.5em;
@@ -8,6 +8,7 @@
   &__name{
     font-size: 2em;
     margin-bottom: 2rem;
+
     & > span{
       font-family: 'Girassol', cursive;
       font-weight:400;
@@ -21,27 +22,10 @@
     margin-right: 3em;
     &__btn{
       margin-left : 3em;
-      // position: relative;
-      // &::before{
-      //   content: '';
-      //   height:3px;
-      //   width:8px;
-      //   background:  $clr-speacial;
-      //   // background: $bg-dark;
-      //   // position: absolute;
-      //   bottom: 5px;
-      // }
-      // &:hover::before{
-      //   @include transition-ease(1s);
-      //   // width: 7rem;
-      //   overflow: hidden; 
-      //   background: $clr-speacial;
-      //   transform: translateX(1300%);
-      // }
+
       &:hover{
-        @include transition-ease(1s);
         color: $clr-speacial;
-        // border : solid 2px $clr-speacial;
+        @include transition-ease(1s); 
       }
     }
   }

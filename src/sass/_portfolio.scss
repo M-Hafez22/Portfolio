@@ -5,7 +5,7 @@
   margin: auto;
 
   .gallery{
-    @include flexCenter;
+    @include columnCenter;
 
     .project{
       margin: 2em auto;

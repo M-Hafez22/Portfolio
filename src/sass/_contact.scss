@@ -1,0 +1,27 @@
+#contacts{
+    margin: 2rem auto;
+
+    & > h3{
+      margin: 1em;
+      font-size: 1.5em;
+    }
+  .contact{
+    @include columnCenter;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    max-width: 900px;
+    margin: 1rem auto; 
+
+    &__item{
+      font-size:1.25em;
+      padding: .5em;
+
+      &:hover{
+        color: $clr-speacial;
+        @include transition-ease(1s);
+        @include  move-top;
+      }
+    }
+  }
+}
+
