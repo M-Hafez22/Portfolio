@@ -23,4 +23,5 @@ function toggleMenu() {
 
 export const burger = () => {
   menuBtn.addEventListener('click', toggleMenu);
+  menuNav.addEventListener('click', toggleMenu);
 }
