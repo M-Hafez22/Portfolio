@@ -26,6 +26,12 @@ img {
   height: 100%;
 }
 
+hr{
+  width: 100wv;
+  height: 2px;
+  margin: 3em 2em;
+  color: $clr-light;
+}
 
 @mixin transition-ease($sec) {
   transition: all $sec ease-in-out;
