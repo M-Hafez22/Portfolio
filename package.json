@@ -4,8 +4,8 @@
   "description": "My Portfolio",
   "main": "index.js",
   "scripts": {
-    "dev": "parcel src/index.html",
-    "pord": "parcel build src/index.html"
+    "dev": "parcel index.html",
+    "pord": "parcel build index.html"
   },
   "repository": {
     "type": "git",
