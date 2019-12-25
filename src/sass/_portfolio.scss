@@ -12,6 +12,10 @@
       position: relative;
       background-color: $bg-dark;
 
+      & > img {
+      border-radius: 5%;
+      }
+
       &__info{
         position: absolute;
         z-index: 2;
@@ -21,11 +25,8 @@
         padding-bottom: 2em;
         font-size: 1.5em;
         background-color: $bg-dark;
-        opacity: 0.70;
+        opacity: 0.95;
   
-        &:hover{
-          opacity: 0.95;
-        }
         
         &__name{
           margin: 1em 0 1.5em;
@@ -33,13 +34,13 @@
 
         &__link{
           border: 2px solid $clr-light;
-          border-radius: 15%;
+          border-radius: 10%;
           padding: .75em;
 
           &:hover,
           &:focus{
-            color: $clr-speacial;
-            border-color: $clr-speacial;
+            color: lighten($clr-speacial, 10%);
+            border-color: lighten($clr-speacial, 10%);
           }
         }
       }
@@ -55,6 +56,22 @@
     & > a > i{
       &:hover{
         color:$clr-speacial;
+      }
+    }
+  }
+}
+
+
+@media only screen and (min-width: 900px){
+  #portfolio{
+    .gallery{
+      flex-direction: row;
+
+      .project{
+        margin: 2em 1em;
+        &__info{
+          font-size: 1em;
+        }
       }
     }
   }

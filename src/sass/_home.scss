@@ -1,12 +1,13 @@
 
 .home{
   @include columnCenter;
-  
+  justify-content: flex-start;
+  padding-top: 10em;
   height: 100vh;
   font-size: 1.5em;
 
   &__name{
-    font-size: 2em;
+    font-size: 1.25em;
     margin-bottom: 2rem;
 
     & > span{
@@ -18,10 +19,11 @@
   }
 
   &__link{
-    margin-top: 4em;
-    margin-right: 3em;
+    margin: 1em 3em 0  0;
+    @include columnCenter;
     &__btn{
       margin-left : 3em;
+      padding: 1em 1em 0 1em;
 
       &:hover{
         color: $clr-speacial;
@@ -29,5 +31,23 @@
       }
     }
   }
+} 
+
+@media only screen and (min-width:520px){
+  .home__link{
+      flex-direction: row;
+    }
+
 }
 
+@media only screen and (min-width:800px){
+  .home{
+    &__name{
+      font-size: 1.5em;
+    }
+
+    &__link{
+      font-size: 1.1em;
+    }
+  }
+}
