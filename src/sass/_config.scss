@@ -3,6 +3,11 @@ $clr-light: #d4d4d4;
 $clr-speacial: #c93490;
 $bg-dark: #1B242F;
 
+
+/*************
+  Tags
+*************/
+
 *, ::after, ::before {
   margin: 0;
   padding: 0;
@@ -33,6 +38,12 @@ hr{
   color: $clr-light;
 }
 
+
+/*************
+  Mixin
+*************/
+
+
 @mixin transition-ease($sec) {
   transition: all $sec ease-in-out;
 }
@@ -53,6 +64,10 @@ hr{
   animation-timing-function: linear;
 }
 
+
+/*************
+  Animations
+*************/
 
 @keyframes move-top {
   0% { -webkit-transform:translateY(0px); }
