@@ -26,6 +26,7 @@
         font-size: 1.5em;
         background-color: $bg-dark;
         opacity: 0.95;
+        
   
         
         &__name{
@@ -55,11 +56,13 @@
     justify-content: space-around;
     & > a > i{
       &:hover{
+        @include transition-ease(0.5s); 
         color:$clr-speacial;
       }
     }
   }
 }
+
 
 
 @media only screen and (min-width: 900px){
@@ -69,8 +72,16 @@
 
       .project{
         margin: 2em 1em;
+        overflow: hidden;
+
+        &:hover .project__info{
+          transform: translateY(0%);
+        }
+
         &__info{
           font-size: 1em;
+          @include transition-ease(0.5s); 
+          transform: translateY(150%);
         }
       }
     }
