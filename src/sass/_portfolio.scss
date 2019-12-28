@@ -72,11 +72,12 @@
 @media only screen and (min-width: 900px){
   #portfolio{
     .gallery{
-      flex-direction: row;
+      flex-flow: row wrap;
 
       .project{
         margin: 2em 1em;
         overflow: hidden;
+        min-width: 400px;
 
         &:hover .project__info{
           transform: translateY(0%);
