@@ -23,6 +23,9 @@
         left: 0;
         right: 0;
         padding-bottom: 2em;
+        margin: auto;
+        width: 70%;
+        border-radius: 50%;
         font-size: 1.5em;
         background-color: $bg-dark;
         opacity: 0.95;
@@ -80,7 +83,7 @@
         min-width: 400px;
 
         &:hover .project__info{
-          transform: translateY(0%);
+          transform: translateY(-40%);
         }
 
         &__info{
