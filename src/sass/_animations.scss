@@ -1,0 +1,13 @@
+
+html {
+  scroll-behavior: smooth !important;
+}
+
+span{
+  transition: all 1s ease;
+}
+
+
+span.animate-text{
+  color: $clr-speacial;
+}
