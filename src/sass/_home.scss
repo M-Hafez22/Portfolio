@@ -1,0 +1,57 @@
+
+.home{
+  @include columnCenter;
+  justify-content: flex-start;
+  padding-top: 10em;
+  height: 100vh;
+  font-size: 1.5em;
+
+  &__name{
+    font-size: 1.25em;
+    margin-bottom: 2rem;
+
+    & > span{
+      font-family: 'Girassol', cursive;
+      font-weight:400;
+    }
+
+  }
+
+  &__link{
+    margin: 1em 3em 0  0;
+    @include columnCenter;
+    &__btn{
+      margin-left : 3em;
+      padding: 1em 1em 0 1em;
+
+      &:hover{
+        color: $clr-speacial;
+        @include transition-ease(1s); 
+      }
+    }
+  }
+} 
+
+
+/*************
+  Responsive
+*************/
+
+@media only screen and (min-width:520px){
+  .home__link{
+      flex-direction: row;
+    }
+
+}
+
+@media only screen and (min-width:800px){
+  .home{
+    &__name{
+      font-size: 1.5em;
+    }
+
+    &__link{
+      font-size: 1.1em;
+    }
+  }
+}

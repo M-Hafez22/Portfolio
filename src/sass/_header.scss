@@ -1,8 +1,8 @@
 .menu-btn{
     position: absolute;
     z-index: 1;
-    right: 1rem;
-    top: 1rem;
+    right: 1.5rem;
+    top: 1.5rem;
     height: 20px;
     width: 35px;
     cursor: pointer;
@@ -63,7 +63,11 @@
   top: 0;
   left: 0;
   width: 100vw;
+<<<<<<< HEAD
   opacity: 0.90;
+=======
+  opacity: 0.95;
+>>>>>>> new
   visibility: hidden;
 
   &.open {
@@ -89,6 +93,10 @@
 
     &__item {
       transform: translateX(100vw);
+<<<<<<< HEAD
+=======
+      
+>>>>>>> new
       @include transition-ease(0.5s);
 
       &.open {
@@ -109,7 +117,7 @@
       @include transition-ease(0.5s);
 
       &:hover {
-        color: $clr;
+        color: $clr-speacial;
       }
     }
   }
@@ -119,4 +127,38 @@
   .menu-nav__item:nth-child(#{$i}) {
     transition-delay: ($i * 0.1s) + 0.15s;
   }
+}
+
+/*************
+  Responsive
+*************/
+
+@media only screen and (min-width: 700px){
+
+  .menu-btn{
+    visibility: hidden;
+  }
+
+  .nav {
+    visibility: visible;
+    position: absolute;
+
+    .menu-nav {
+      display: block;
+      transform: translateY(0);
+      height: 100%;
+      background: transparent;
+      text-align: right;
+
+      &__item {
+        display: inline;
+        padding-right: 2rem;
+      }
+
+      &__link {
+        font-size: 1.5rem;
+      }
+    }
+  }
+
 }
