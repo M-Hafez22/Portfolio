@@ -1,9 +1,5 @@
 import {text} from "./config";
 
-
-
-
- 
 export const animate_text = () => {
   const str = text.textContent;
   const letters = str.split("");

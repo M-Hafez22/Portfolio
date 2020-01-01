@@ -20,13 +20,8 @@ function toggleMenu() {
   }
 }
 
-<<<<<<< HEAD
-export const burger = () => {
-  menuBtn.addEventListener('click', toggleMenu);
-=======
 
 export const burger = () => {
   menuBtn.addEventListener('click', toggleMenu);
   menuNav.addEventListener('click', toggleMenu);
->>>>>>> new
 }
