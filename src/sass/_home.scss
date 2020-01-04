@@ -23,10 +23,19 @@
     &__btn{
       margin-left : 3em;
       padding: 1em 1em 0 1em;
-
+      text-decoration: none;
+      background-image: -webkit-linear-gradient($clr-speacial,$clr-speacial);
+      background-image: -o-linear-gradient($clr-speacial, $clr-speacial);
+      background-image: linear-gradient($clr-speacial,$clr-speacial);
+      background-repeat: no-repeat;
+      background-position: bottom center;
+      background-size: 0% 3px;
+      // transition: background-size 500ms ease-in-out;
+    
       &:hover{
-        color: $clr-speacial;
-        @include transition-ease(1s); 
+        background-size: 75% 3px; 
+        color: inherit;
+        @include transition-ease(500ms); 
       }
     }
   }
