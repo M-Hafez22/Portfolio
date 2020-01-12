@@ -1,25 +1,17 @@
 import {menuBtn, hamburger, nav, menuNav, navItems} from "./config";
 
-let showMenu = false;
-
 function toggleMenu() {
-  if(!showMenu) {
-    hamburger.classList.add('open');
-    nav.classList.add('open');
-    menuNav.classList.add('open');
-    navItems.forEach(item => item.classList.add('open'));
-
-    showMenu = true;
-  } else {
-    hamburger.classList.remove('open');
-    nav.classList.remove('open');
-    menuNav.classList.remove('open');
-    navItems.forEach(item => item.classList.remove('open'));
-
-    showMenu = false;
-  }
+  // toggle burger button
+  hamburger.classList.toggle('open');
+  // toggle menu 
+  nav.classList.toggle('open');
+  menuNav.classList.toggle('open');
+  // Animate menu items
+  navItems.forEach((item, i) => {
+    item.classList.toggle('open');
+    item.style.transitionDelay = `${(i * 0.1) + 0.2}s`;
+    });
 }
-
 
 export const burger = () => {
   menuBtn.addEventListener('click', toggleMenu);
