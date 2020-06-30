@@ -4,24 +4,26 @@
   "description": "My Portfolio",
   "main": "index.js",
   "scripts": {
-    "dev": "parcel index.html",
-    "pord": "parcel build index.html"
+    "start": "parcel src/index.html",
+    "build": "parcel build src/index.html --public-url ./",
+    "prebuild": "rm -rf dist"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/M-Hafez22/test.git"
+    "url": "https://github.com/M-Hafez22/Portfolio.git"
   },
   "author": "Mohamed_Hafez",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/M-Hafez22/test/issues"
   },
-  "homepage": "https://github.com/M-Hafez22/test#readme",
+  "homepage": "https://github.com/M-Hafez22/Portfolio.git",
   "devDependencies": {
     "parcel-bundler": "^1.12.4",
     "sass": "^1.23.7"
   },
   "dependencies": {
+    "acorn": "^5.7.4",
     "co": "^4.6.0"
   }
 }
